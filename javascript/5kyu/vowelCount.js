@@ -20,3 +20,37 @@ const result = getCount("hello world");
 console.log(result); // Output: 3
 
 
+
+//sloving in by using loop
+
+JavaScript:
+
+
+function getCount (str) {
+    // Define the vowels
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    // Convert the string to lowercase to handle both uppercase and lowercase vowels
+    const lowerStr = str.toLowerCase();
+
+    // Initialize a counter for vowels
+    let vowelCount = 0;
+
+    // Iterate through each character in the string
+    for (let char of lowerStr) {
+        // Check if the character is a vowel
+        if (vowels.includes(char)) {
+            vowelCount++;
+        }
+    }
+
+    // Return the final count
+    return vowelCount;
+}
+
+// Example usage
+// const result = getCount("hello world");
+// console.log(result); // Output: 3
+
+
+
