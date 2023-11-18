@@ -47,3 +47,9 @@ console.log(isSquare(3));   // Output: false
 console.log(isSquare(4));   // Output: true
 console.log(isSquare(25));  // Output: true
 console.log(isSquare(26));  // Output: false
+
+//another way to solve simply
+
+var isSquare = function(n){
+    return Math.sqrt(n) % 1 === 0 ? true : false;
+  };
